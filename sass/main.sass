@@ -1,0 +1,353 @@
+@import fonts
+@import libs
+
+*
+  box-sizing: border-box
+
+body
+  font-size: 18px
+  margin: 0 auto
+  font-family: 'Montserrat', sans-serif
+  line-height: 1.35
+  position: relative
+
+#my-page
+  overflow-x: hidden
+
+header
+  position: relative
+  background:
+    image: url("../img/bg-header.jpg")
+    repeat: repeat-x
+    position: center -40px
+    color: #000
+  color: #fff
+  padding-bottom: 65px
+
+.header-content
+  display: flex
+  justify-content: center
+
+.header-left
+  width: 670px
+  padding-left: 69px
+  .logo
+    display: block
+    margin: 45px 0 35px 0
+  .h1
+    margin: 0 5px 0 -1px
+    font-size: 40px
+    font-weight: 800
+    line-height: 1
+  .p
+    margin: 18px 0 28px 1px
+  .iframe-wrapper
+    position: relative
+    bottom: 0
+    padding-bottom: 56.25%
+    height: 0
+    overflow: hidden
+    iframe
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      border-width: 0
+      outline-width: 0
+
+.header-right
+  width: 500px
+  padding: 134px 70px 0 0
+  .info
+    width: 250px
+    font-size: 14px
+    margin: 19px 38px 38px 0
+    float: right
+    span
+      color: #fd3277
+    &:before
+      content: ""
+      position: relative
+      top: 6px
+      display: block
+      float: left
+      width: 40px
+      height: 25px
+      margin: 0 12px 15px 0
+      background: linear-gradient(#2e4f99 50%, #c7af2b 50%)
+      border-radius: 10em
+  .trade
+    width: 330px
+    float: right
+    .trading
+      width: 105%
+      margin-bottom: 7px
+      p
+        display: inline-block
+        width: 48%
+        font-size: 24px
+        margin: 0
+        &:first-child
+          padding-left: 4px
+      span
+        color: #fd3277
+    .trading-company
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+      align-items: center
+
+.registration-form
+  width: 330px
+  text-align: center
+  padding: 23px 14px 39px 14px
+  border-left: 1px solid #cec6e2
+  border-radius: 5px
+  background-color: #fff
+  color: #000
+  float: right
+  .form-step
+    display: inline-block
+    background-color: #1b0195
+    color: #fff
+    font-size: 16px
+    font-weight: 400
+    padding: 4px 11px
+    border-radius: 12em
+    margin: 0 0 9px 0
+    span
+      font-weight: 700
+  .form-title
+    font-size: 27px
+    font-weight: 900
+    margin: 0 0 15px 0
+    line-height: 1.1
+    span
+      font-size: 34px
+  form
+    .textField
+      width: 100%
+      padding: 14px 15px
+      border-radius: 20px
+      outline: none
+      margin-bottom: 9px
+      font-size: 16px
+      background-color: #eceef1
+      border: 1px solid #fafafb
+      font-weight: 500
+      &::placeholder
+        color: #000
+        font-weight: 500
+        font-family: "Montserrat"
+      &:nth-child(5)
+        margin-bottom: 12px
+
+
+.content
+  min-height: 652px
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  align-items: center
+  .content-left
+    display: inline-block
+    position: relative
+    width: 670px
+    .bg-style
+      position: relative
+      width: 119.5%
+      top: -32px
+      right: 25%
+    .graph
+      position: absolute
+      width: 87%
+      top: 12%
+      right: 8.5%
+    .item
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      position: absolute
+      background: radial-gradient(circle at center, #2c0014 58%, transparent  59%, transparent )
+      border-radius: 50%
+      overflow: hidden
+      transform: rotate(180deg)
+      &:before
+        content: ""
+        position: absolute
+        border: 4px dashed #fd3277
+        top: -2px
+        bottom: -2px
+        left: -2px
+        right: -2px
+        letter-spacing: 10px
+        border-radius: 50%
+        overflow: hidden
+      p
+        margin: 0
+        transform: rotate(180deg)
+      .year
+        color: #fd3277
+        font-weight: 400
+        line-height: 1
+      .price
+        color: #fff
+        font-weight: 800
+    .item-1
+      width: 28.2%
+      height: 30.8%
+      right: 10.4%
+      top: 16.5%
+      font-size: 27px
+    .item-2, .item-3
+      width: 20.2%
+      height: 22.2%
+      right: 39.3%
+      top: 39.5%
+      font-size: 20px
+    .item-3
+      right: 44.5%
+      top: 63.7%
+    .item-4
+      width: 12.7%
+      height: 14%
+      right: 71.8%
+      top: 75.5%
+      font-size: 14px
+    .profit
+      display: inline-block
+      position: absolute
+      margin: 0
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: 800
+      bottom: 9%
+      left: 10%
+
+  .content-right
+    width: 500px
+    padding-right: 70px
+    padding-top: 67px
+    padding-bottom: 67px
+    &-title
+      margin: 0 0 0 1px
+      font-size: 40px
+      font-weight: 800
+      line-height: 1
+    &-text
+      font-size: 18px
+      font-weight: 500
+      margin: 18px 0 28px 0
+    .button
+      display: inline-block
+      margin-bottom: 39px
+    .featured
+      text-transform: uppercase
+      margin: 0
+      font-weight: 700
+      font-size: 14px
+    .news
+      display: flex
+      justify-content: space-between
+      margin-top: 11px
+
+.button
+  display: inline-block
+  padding: 19px 21px
+  max-width: 100%
+  font-family: "Montserrat"
+  font-size: 15px
+  font-weight: 700
+  text-transform: uppercase
+  text-decoration: none
+  color: #fff
+  background: linear-gradient(to top, #ff6a52, #fd3675)
+  border: none
+  box-shadow: inset 0px 0px 1px rgba(255,255,255,0.6)
+  text-shadow: 0px 0px 8px rgba(0,0,0,0.2)
+  border-radius: 10em
+  &:hover
+    cursor: pointer
+    background: linear-gradient(to top, #fe534f, #f92065)
+
+footer
+  height: 124px
+  background-color: #130262
+  position: relative
+  .wrapper
+    max-width: 1920px
+    display: block
+    position: relative
+    margin: 0 auto
+    .owl-carousel
+      position: absolute
+      top: -55px
+      .item
+        display: inline-block
+        min-width: 250px
+        background-color: #fff
+        padding: 18px
+        margin: 10px 0
+        box-shadow: 0 0 15px rgba(0,0,0,0.3)
+        border-radius: 10px
+        background:
+          image: url("../img/money.png")
+          position: 150px 80px
+          repeat: no-repeat
+        .name
+          font-size: 19px
+          font-weight: 800
+          margin: 0
+        .currency, .date
+          display: inline-block
+          font-size: 17px
+          color: #6b6b6b
+          text-transform: uppercase
+          font-weight: 700
+          margin: 0px 0 13px 0
+        .money
+          font-size: 24px
+          font-weight: 800
+          color: #fd3277
+          margin: 0
+
+.popup
+  position: absolute
+  right: 0
+  left: 0
+  top: 0
+  margin: auto
+  transform: translate(0,25%)
+
+.close-popup
+  position: absolute
+  top: 15px
+  right: 15px
+  width: 23px
+  height: 23px
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    background-color: #000
+    position: absolute
+    height: 1px
+    width: 31px
+    top: 11px
+    left: -4px
+    transform: rotate(-45deg)
+  &:after
+    transform: rotate(45deg)
+
+.overlay
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, .85)
+  display: none
+  z-index: 5
+
+@import media

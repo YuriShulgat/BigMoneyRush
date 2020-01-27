@@ -1,0 +1,97 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens lg*/
+@media only screen and (max-width : 1200px)
+    header
+      .header-left
+        width: 57%
+      .header-right
+        width: 43%
+    .content
+      .content-left
+        width: 57%
+    .content-right
+      width: 43%
+      .button
+        margin-bottom: 30px
+      .news
+        img
+          width: 80px
+          height: 30px
+
+
+/* Medium Devices, Desktops md*/
+@media only screen and (max-width : 992px)
+  #my-page
+    margin: 0 auto
+  header
+    padding-bottom: 20px
+    background-position: center 0
+  .header-content
+    flex-direction: column
+    align-items: center
+    .header-left
+      width: 80%
+      padding-left: 0
+      margin-bottom: 20px
+    .header-right
+      display: flex
+      justify-content: space-around
+      width: 80%
+      padding: 0
+      .registration-form
+        display: none
+  .content
+    flex-direction: column
+    .content-left
+      width: 100%
+    .content-right
+      width: 80%
+      padding:
+        right: 0
+        top: 0
+      .button
+        position: relative
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%)
+      .featured
+        text-align: center
+      .news
+        justify-content: space-around
+
+
+/* Small Devices, Tablets sm*/
+@media only screen and (max-width : 768px)
+  .header-right
+    flex-direction: column
+    align-items: center
+    .info
+      margin: 0 0 20px 0
+
+/* Extra Small Devices, Phones xs*/
+@media only screen and (max-width : 576px)
+  .header-left .h1, .content .content-right-title
+    font-size: 32px
+  .content
+    .content-left
+      .item-1
+        font-size: 20px
+      .item-2, .item-3
+        font-size: 15px
+      .item-4
+        font-size: 10px
+      .profit
+        font-size: 12px
+        bottom: 7%
+        left: 11%
+    .content-right
+      .button
+        font-size: 12px
+
+/* Custom, iPhone Retina */
+//@media only screen and (max-width : 320px)
+
+/**/
+
+
